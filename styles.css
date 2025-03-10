@@ -1,0 +1,236 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: gray;  /* Light Gray */
+    color: black;  /* Dark Blue */
+    line-height: 1.6;
+    overflow-x: hidden;
+    padding: 0;
+    scroll-behavior: smooth; /* Smooth scrolling for the entire page */
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: right;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: black;  /* Dark Blue */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    background-color: black;  /* Dark Blue */
+    padding: 10px 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: inline-block;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  .navbar ul li a {
+    color: white;  /* Light Blue */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: rgb(100, 255, 10);  
+  }
+  
+  /* Full Screen Section Styling */
+  .section {
+    padding: 20px;
+    height: 100vh; /* Full height for each section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0; /* Ensure no extra margins */
+  }
+  
+  .section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1D3557;
+  }
+  
+  .section p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Home Section */
+  #home {
+    background-color: black;  /* Dark Blue */
+    color: #FFF;
+    height: 100vh;
+  }
+  
+  /* About Section */
+  #about {
+    background-color: black;  /* Light Blue */
+    color: #1D3557;  /* Dark Blue */
+  }
+  
+  /* Projects Section */
+  #projects {
+    background-color: black;  /* Light Cream */
+    color: #1D3557;
+  }
+  
+ /* Skills Section Styling */
+#skills {
+    background-color: black;  /* Dark Blue */
+    color: #FFF;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #A8DADC;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .skill {
+    width: 120px;
+    text-align: center;
+  }
+  
+  .skill img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    object-fit: contain;  /* Ensures image stays within bounds */
+  }
+  
+  .skill p {
+    font-size: 1.2rem;
+    color: #A8DADC;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Styling for Mobile Devices */
+  @media screen and (max-width: 768px) {
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      gap: 20px;
+    }
+  
+    .skill {
+      width: auto;
+      text-align: center;
+    }
+  
+    .skill img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    #skills h2 {
+      font-size: 2rem;
+    }
+  }  
+  
+  /* Contact Section */
+  #contact {
+    background-color: black;  /* Light Blue */
+    color: #1D3557;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: black;  /* Dark Blue */
+    color: #A8DADC;  /* Light Blue */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fade-in 1.5s ease-out forwards;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    .navbar ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .section h2 {
+      font-size: 2rem;
+    }
+  
+    .project {
+      padding: 15px;
+    }
+  
+    footer {
+      padding: 15px;
+    }
+  
+    .section {
+      margin: 0; /* Reducing margins for smaller screens */
+      padding: 40px 20px; /* Adjusting padding */
+      height: 100vh; /* Full screen height */
+    }
+  
+    #home {
+      margin: 0; /* Reducing margin for smaller screens */
+      padding: 80px 20px; /* Adjusting padding */
+      height: 100vh; /* Full screen height */
+    }
+  }
+  
