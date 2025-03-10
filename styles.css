@@ -39,7 +39,7 @@
   }
   
   .navbar ul li {
-    display: inline;
+    display: flex;
     margin: 0 20px;
   }
   
